@@ -198,7 +198,7 @@ body,
 input,
 select,
 textarea {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 1);
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 100;
@@ -2291,7 +2291,7 @@ header.major {
 }
 
 header.major:after {
-  background: #e44c65;
+  background: #2f64c5;
   content: "";
   display: inline-block;
   height: 0.2em;
@@ -3010,7 +3010,7 @@ input[type="submit"].primary,
 input[type="reset"].primary,
 input[type="button"].primary,
 .button.primary {
-  background-color: #e44c65;
+  background-color: #2f64c5;
   box-shadow: none;
   color: #ffffff !important;
 }
@@ -3019,7 +3019,7 @@ input[type="submit"].primary:hover,
 input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 .button.primary:hover {
-  background-color: #e76278;
+  background-color: #0e3e97;
 }
 
 input[type="submit"].primary:active,
@@ -3196,7 +3196,7 @@ input[type="button"]:disabled,
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
-  background: rgba(23, 24, 32, 0.95);
+  background: rgba(29, 61, 137, 0.95);
   border-style: solid;
   opacity: 1;
   position: absolute;
@@ -3254,15 +3254,15 @@ input[type="button"]:disabled,
 }
 
 .spotlight.style1 .content {
-  border-color: #e44c65;
+  border-color: #0000003b;
 }
 
 .spotlight.style2 .content {
-  border-color: #5480f1;
+  border-color: #0000003b;
 }
 
 .spotlight.style3 .content {
-  border-color: #39c088;
+  border-color: #0000003b;
 }
 
 .spotlight.inactive .content {
@@ -3316,7 +3316,7 @@ body.is-touch .spotlight {
 }
 
 .wrapper.style2 {
-  background: #e44c65;
+  background: #4c5be4;
 }
 
 .wrapper.style2 input[type="text"]:focus,
@@ -3596,26 +3596,26 @@ body.landing #header {
 #banner:after {
   background-image: -moz-linear-gradient(
       top,
-      rgba(23, 24, 32, 0.95),
-      rgba(23, 24, 32, 0.95)
+      rgb(47 176 227 / 95%),
+      rgb(23 38 91 / 95%)
     ),
     url("images/overlay.png");
   background-image: -webkit-linear-gradient(
       top,
-      rgba(23, 24, 32, 0.95),
-      rgba(23, 24, 32, 0.95)
+      rgb(47 176 227 / 95%),
+      rgb(0 30 139 / 95%)
     ),
     url("images/overlay.png");
   background-image: -ms-linear-gradient(
       top,
-      rgba(23, 24, 32, 0.95),
-      rgba(23, 24, 32, 0.95)
+      rgb(47 176 227 / 95%),
+      rgb(0 30 139 / 95%)
     ),
     url("images/overlay.png");
   background-image: linear-gradient(
       top,
-      rgba(23, 24, 32, 0.95),
-      rgba(23, 24, 32, 0.95)
+      rgb(47 176 227 / 95%),
+      rgb(0 30 139 / 95%)
     ),
     url("images/overlay.png");
   content: "";
@@ -3644,8 +3644,9 @@ body.landing #header {
 }
 
 #banner .content header h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin: 0;
+  text-shadow: 1px 1px black;
 }
 
 #banner .content header p {
@@ -3654,9 +3655,10 @@ body.landing #header {
 }
 
 #banner .content .image {
+  margin-top: 2rem;
   border-radius: 100%;
   display: inline-block;
-  height: 18em;
+  /* height: 18em; */
   margin-left: 3em;
   vertical-align: middle;
   width: 18em;
@@ -3824,7 +3826,7 @@ body.is-touch #banner {
   }
 
   .spotlight .content {
-    background-color: #1c1d26;
+    background-color: rgba(29, 61, 137, 0.95);
     border-width: 0 !important;
     border-top-width: 0.35em !important;
     bottom: auto !important;
@@ -4001,7 +4003,8 @@ body.is-touch #banner {
   }
 
   #banner .content header h2 {
-    font-size: 1.5em;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
   }
 
   #banner .content .image {
@@ -4083,7 +4086,7 @@ body.is-touch #banner {
   }
 
   #titleBar .toggle:before {
-    background: #e44c65;
+    background: #2f64c5;
     color: rgba(255, 255, 255, 0.5);
     content: "\f0c9";
     display: block;
@@ -4270,3 +4273,10 @@ ul.no-bullets {
   margin: 0; /* Remove margins */
   text-align: start;
 }
+
+.banner-text {
+  max-width: 40rem;
+  text-align: justify;
+}
+
+/* -webkit-linear-gradient(top, rgb(255 255 255 / 95%), rgb(34 131 183 / 95%)), url(images/overlay.png); */
