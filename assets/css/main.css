@@ -211,12 +211,12 @@ a {
   -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #e44c65;
+  color: #d2d2d2;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e44c65 !important;
+  color: #ffffff !important;
   border-bottom-color: transparent;
 }
 
@@ -3316,7 +3316,7 @@ body.is-touch .spotlight {
 }
 
 .wrapper.style2 {
-  background: #4c5be4;
+  background: rgba(29, 61, 137, 0.95);
 }
 
 .wrapper.style2 input[type="text"]:focus,
